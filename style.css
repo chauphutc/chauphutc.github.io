@@ -15,10 +15,14 @@ h1 {
     to { opacity: 0; }
   }
   /* hiển thị hình ảnh */
-  img {
-    display: block;
+  .container {
+    display: flex;
+  }
+  
+  .container img {
+    flex: 1;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
   }
+  
   
