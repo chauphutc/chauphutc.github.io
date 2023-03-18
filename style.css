@@ -17,12 +17,14 @@ h1 {
   /* hiển thị hình ảnh */
   .container {
     display: flex;
-  }
-  
-  .container img {
+    justify-content: center; /* Can dòng chữ và hình ảnh theo chiều ngang */
+    align-items: center; /* Can hình ảnh theo chiều dọc */
+}
+
+.container img {
     flex: 1;
-    max-width: 100%;
+    max-width: 30%; /* Đặt kích thước của hình ảnh */
     height: auto;
-  }
-  
+}
+
   
