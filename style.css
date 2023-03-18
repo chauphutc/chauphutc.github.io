@@ -1,27 +1,24 @@
+/* định dạng cho tiêu đề h1 */
 h1 {
-    font-size: 48px;
     text-align: center;
+    font-size: 60px;
     color: red;
-    -webkit-animation: blink 1s linear infinite;
-    -moz-animation: blink 1s linear infinite;
-    animation: blink 1s linear infinite;
-}
- 
-/* Tạo hiệu ứng nhấp nháy */
-@-webkit-keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
-   
-@-moz-keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
-   
-@keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
+  }
+  
+  /* hiệu ứng nhấp nháy cho h1 */
+  .blink {
+    animation: blinker 0.6s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+  }
+  
+  @keyframes blinker {  
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  /* hiển thị hình ảnh */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
